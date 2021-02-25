@@ -26,6 +26,7 @@ function Chat(props) {
         });
         lobby.on('new message', function(msg){
             console.log('message: ', msg);
+            setMessages([...messages, msg])
         });
 
     };
